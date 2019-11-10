@@ -3626,3 +3626,31 @@ input, select, textarea {
 	.social-link-box {
 		font-size: 1.2em;
 	}
+
+	.main-image-container {
+		position: relative;
+
+	}
+	.main-image {
+		border-radius: 50% 50%;
+		position: absolute;
+		width: 45%;
+		transform: translate(-50%, -50%);
+		top: 50%;
+		left: 50%;
+	}
+
+	@media screen and (max-width:1000px) {
+		.main-image-container {
+			position: relative;
+			height: 100px;
+		}
+		.main-image {
+			border-radius: 50% 50%;
+			position: absolute;
+			width: 8rem;
+			transform: translate(-50%, -50%);
+			top: 50%;
+			left: 50%;
+		}
+	}
