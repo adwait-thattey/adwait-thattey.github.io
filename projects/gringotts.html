@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Adwait's Blog</title>
+		<title>Adwait's Projects - Gringotts</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
@@ -20,7 +20,7 @@
 				<header id="header">
 						
 					<h1>
-							<a href="/blog/about.html" class="author"><img style="width: 3.5em;" src="../images/avatar.jpg" alt="" /><span class="name" style="font-weight: bold; font-size: 120%;">Adwait Thattey</span></a>
+							<a href="/blog/about.html" class="author"><img style="width: 3.5em;" src="/images/adwait.jpeg" alt="" /><span class="name" style="font-weight: bold; font-size: 120%;">Adwait Thattey</span></a>
 					</h1>
 					<nav class="links">
 							<ul>
@@ -102,24 +102,64 @@
 							<article class="post">
 								<header>
 									<div class="title">
-										<h2><a href="#">Sample Blog</a></h2>
-										<p>Lorem ipsum dolor amet nullam consequat etiam feugiat</p>
+										<h2><a href="#">Gringotts</a></h2>
+										<!-- <p>Lorem ipsum dolor amet nullam consequat etiam feugiat</p> -->
 									</div>
 									<div class="meta">
-										<time class="published" datetime="2015-11-01">November 1, 2015</time>
-										<a href="#" class="author"><span class="name">Jane Doe</span><img src="../images/avatar.jpg" alt="" /></a>
+										<time class="published" datetime="2015-11-01">November 1, 2019</time>
+										<a href="#" class="author"><span class="name">Adwait Thattey</span><img src="/images/adwait.jpeg" alt="" /></a>
 									</div>
 								</header>
-								<span class="image featured"><img src="../images/pic01.jpg" alt="" /></span>
-								<p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-								<p>Nunc quis dui scelerisque, scelerisque urna ut, dapibus orci. Sed vitae condimentum lectus, ut imperdiet quam. Maecenas in justo ut nulla aliquam sodales vel at ligula. Sed blandit diam odio, sed fringilla lectus molestie sit amet. Praesent eu tortor viverra lorem mattis pulvinar feugiat in turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce ullamcorper tellus sit amet mattis dignissim. Phasellus ut metus ligula. Curabitur nec leo turpis. Ut gravida purus quis erat pretium, sed pellentesque massa elementum. Fusce vestibulum porta augue, at mattis justo. Integer sed sapien fringilla, dapibus risus id, faucibus ante. Pellentesque mattis nunc sit amet tortor pellentesque, non placerat neque viverra. </p>
-								<footer>
-									<ul class="stats">
-										<li><a href="#">General</a></li>
-										<li><a href="#" class="icon solid fa-heart">28</a></li>
-										<li><a href="#" class="icon solid fa-comment">128</a></li>
+								<!-- <span class="image featured"><img src="../images/pic01.jpg" alt="" /></span> -->
+								<p>This project is split in 3 components. </p>
+								<p><a href="https://github.com/adwait-thattey/gringotts-server" target="_blank">Gringotts Server</a>:
+								The server component written in node.js containing core functionality. (Under development)
+								</p>
+								<p><a href="https://github.com/adwait-thattey/gringotts-ui" target="_blank">Gringotts UI</a>:
+									The web UI written in React and MaterializeCSS. (Under development)
+								</p>
+								<p><a href="https://github.com/adwait-thattey/gringotts-cli" target="_blank">Gringotts CLI</a>:
+									The Command line interface written in Go (Not started yet)
+								</p>
+								<p>
+									Collaborators: <a href="https://github.com/BrijeshBumrela" target="_blank">@BrijeshBumrela</a>  , <a href="https://github.com/Vaish0906" target="_blank">@Vaish0906</a>
+								</p>
+								<p>Gringotts is project to facilitate securely storing any kinds of passwords/credentials/tokens/keys or just any kind of data. <br>
+									It extends upon the functionalities of <a href="https://vaultproject.io" target="_blank" >Vault</a> and builds a set of APIs and UI that are much more user friendly.
+								</p>
+								
+								<p>Some of the proposed features are:</p>
+								<ol>
+									<li>Credential Manager: Securely store passwords/credentials or just any data</li>
+									<li>Dynamic Credentials: Configure the project 1 time with access tokens of AWS/GCP/Azure. 
+										Then from next time generate new short lived users with configurable permissions with just a click of button. 
+										New users are automatically created in IAM. No need to remember or store passwords
+									</li>
+									<li>Dynamic SSH Keys: Configure the remote machine to accept keys signed by Gringotts. Then, with just a click of button generate new SSH keys and
+										certificates and use them to access the remote machine via SSH. The keys are short lived. So no need to worry about
+										forgetting them on some other machine. And no need to carry keys with you, as new pair can be generated anytime from anywhere
+									</li>
+									<br>
+									and more...
+								</ol>
+								<div>
+									<h4>SSH Workflow: </h4>
+									<img style="max-height: 40vh;" src="/images/projects/gringotts/Gringottes-ssh-initial steps.png">
+									<img style="max-height: 40vh;" src="/images/projects/gringotts/Copy of Gringottes-ssh-next-steps.png">
+								</div>
+								<br><br>
+								<h3>Proposed Components:</h3>
+								<img style="max-height: 80vh;" src="/images/projects/gringotts/SOAD Architecture.png" alt="">
+							
+								<p>
+									Tentative Dates:
+									<ul>
+										<li>30 Nov 2019     : Phase 1 completion. (Credential Manager Server and UI)</li>
+										<li>31 December 2019: Phase 2 completion (All server components)</li>
+										<li>20 Jan 2020     : All Server and UI components</li>
+										<li>10 Feb 2020     : COmmand Line App and other exra components</li>
 									</ul>
-								</footer>
+								</p>
 							</article>
 
 					</div>
